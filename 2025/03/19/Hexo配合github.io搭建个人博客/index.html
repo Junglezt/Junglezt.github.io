@@ -23,6 +23,12 @@
         margin-top: 0 !important;
         margin-bottom: 1rem !important;
     }
+    @media (min-width: 1024px) {
+        #middle-box{
+            min-width: 56rem;
+        }
+    
+    }
 </style>
 <head>
     <meta charset="UTF-8">
@@ -31,6 +37,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/tailwind.css">
     <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/toc.css">
     
 <header class="bg-black text-hacker-white py-4 font-dos font-extrabold">
     <div class="container mx-auto flex items-center justify-between space-x-8">
@@ -169,8 +176,9 @@
     </p>
 
     <!-- 文章内容 -->
-    <div id="article-content" class="article-entry prose prose-invert mx-auto max-w-4xl leading-relaxed highlight">
-        <h2 id="1-创建github仓库"><a href="#1-创建github仓库" class="headerlink" title="1.创建github仓库"></a>1.创建github仓库</h2><p>在创建github仓库的时候，有一些讲究；仓库的名称必须是<code>&lt;username&gt;</code> + <code>github.com</code>组合<br>例如我的就是： <code>Junglezt.github.com</code></p>
+    <div id="article-content" class="article-entry prose prose-invert mx-auto max-w-4xl leading-relaxed highlight" style="display: flex;">
+        <div id="middle-box">
+            <h2 id="1-创建github仓库"><a href="#1-创建github仓库" class="headerlink" title="1.创建github仓库"></a>1.创建github仓库</h2><p>在创建github仓库的时候，有一些讲究；仓库的名称必须是<code>&lt;username&gt;</code> + <code>github.com</code>组合<br>例如我的就是： <code>Junglezt.github.com</code></p>
 <p><img src="/../img/image.png" alt="alt text"></p>
 <h2 id="2-在本地搭建hexo"><a href="#2-在本地搭建hexo" class="headerlink" title="2.在本地搭建hexo"></a>2.在本地搭建hexo</h2><blockquote>
 <p>hexo是一个轻量级，专门为个人建立网站的博客框架</p>
@@ -238,12 +246,27 @@
 <p>可以看出，并没有标题，这些可以自己进行修改<br>修改<code>_config.yml</code>即可</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">title:</span> <span class="hljs-string">Junglezt&#x27;s</span> <span class="hljs-string">Blog</span><br><span class="hljs-attr">subtitle:</span> <span class="hljs-string">&quot;Welcome to Junglezt&#x27;s Blog&quot;</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">&#x27;当你把希望寄托在自己身上时，你会选择奔跑。&#x27;</span><br><span class="hljs-attr">keywords:</span><br><span class="hljs-attr">author:</span> <span class="hljs-string">Junglezt</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span><br><span class="hljs-attr">timezone:</span> <span class="hljs-string">&#x27;&#x27;</span><br></code></pre></td></tr></table></figure>
 
+        </div>
+        
+            <div class="post-container">
+            <aside class="toc-container">
+                <button class="toc-toggle">文章目录</button>
+                <nav class="toc" id="toc"></nav>
+            </aside>
+        </div>
+        
     </div>
+
 
     <!-- 返回主页链接 -->
     <div class="text-center my-8">
         <a href="/" class="text-hacker-color1 underline hover:text-hacker-color2">← Back to Home</a>
     </div>
+
+      
+      <script src="/js/toc.js"></script>  <!-- 引入 TOC 逻辑 -->
+      
+      
 
     <footer class="bg-black text-gray-400 py-4">
     <div class="container mx-auto text-center">
