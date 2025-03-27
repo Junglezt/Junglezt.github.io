@@ -33,7 +33,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junglezt&#39;s Blog - Hello World</title>
+    <title>Junglezt&#39;s Blog - Hexo配合github.io搭建个人博客</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/tailwind.css">
     <link rel="stylesheet" href="/css/highlight.css">
@@ -168,29 +168,32 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body class="bg-black text-hacker-color3 container mx-auto">
     <!-- 文章标题 -->
-    <h1 class="text-5xl text-hacker-color1 font-bold font-dos my-6 text-center">Hello World</h1>
+    <h1 class="text-5xl text-hacker-color1 font-bold font-dos my-6 text-center">Hexo配合github.io搭建个人博客</h1>
 
     <!-- 发布时间 -->
     <p class="text-hacker-color3 text-center text-sm mb-4">
-        2025-03-19
+        2025-03-27
     </p>
 
     <!-- 文章内容 -->
     <div id="article-content" class="article-entry prose prose-invert mx-auto max-w-4xl leading-relaxed highlight" style="display: flex;">
         <div id="middle-box">
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+            <blockquote>
+<p>之前激活的IDEA失效了，于是想找一下有没有可以白嫖的方案，于是找到了<br><a target="_blank" rel="noopener" href="https://idea.hacks.tools/#license-iframe">https://idea.hacks.tools/#license-iframe</a></p>
+</blockquote>
+<p>该网站提供了JetBrains全家桶的激活方案</p>
+<h2 id="1-下载压缩包"><a href="#1-下载压缩包" class="headerlink" title="1.下载压缩包"></a>1.下载压缩包</h2><p><img src="/../img/image-10.png" alt="alt text"></p>
+<h2 id="2-运行script脚本文件"><a href="#2-运行script脚本文件" class="headerlink" title="2. 运行script脚本文件"></a>2. 运行<code>script</code>脚本文件</h2><blockquote>
+<p>前提：在本机中已经安装了IDEA、Pycharm编辑器</p>
+</blockquote>
+<p><img src="/../img/image-12.png" alt="alt text"></p>
+<p>根据不同的操作系统有不同的可执行文件<br>例如windows为<code>install-all-users.vbs</code>，linux为<code>install.sh</code><br>弹出<code>Done.</code>激活完成</p>
+<h2 id="3-修改IDEA启动配置文件"><a href="#3-修改IDEA启动配置文件" class="headerlink" title="3. 修改IDEA启动配置文件"></a>3. 修改IDEA启动配置文件</h2><p>找到<code>IDEA</code>的安装目录<code>/bin</code>有一个<code>idea64.exe.vmoptions</code><br><img src="/../img/image-13.png" alt="alt text"></p>
+<p>在文件后两行加入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs config">--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED<br>--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="4-IDEA激活"><a href="#4-IDEA激活" class="headerlink" title="4. IDEA激活"></a>4. IDEA激活</h2><p>启动IDEA,显示需要输入激活码，在<code>https://idea.hacks.tools/license</code><br>点击复制需要的激活码，输入即可激活<br><img src="/../img/image-14.png" alt="alt text"></p>
 
         </div>
         
